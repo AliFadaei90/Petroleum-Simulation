@@ -1,0 +1,379 @@
+<!DOCTYPE DEXXMLDoc SYSTEM "DEXXMLDoc.DTD">
+<DEXXMLDoc name="DBeta.dxpx" creator="DX11" version="11.1.0.1">
+<designInfo studyType="ResponseSurface" studySubType="Randomized" designType="3LvlFactorial" noOfRuns="12" noOfFactors="4" noOfResponses="4">
+<designNotes>This data file created by Design-Expert 11.</designNotes>
+</designInfo>
+<blockInfo>
+<block code="0" name="Block 1"/>
+</blockInfo>
+<factorInfo>
+<factor id="A" name="Rate" unit="MMft3/day" type="Numeric">
+<numeric format="General" low="0" high="1" stdDev="0"/>
+</factor>
+<factor id="B" name="Rw" unit="ft" type="Numeric">
+<numeric format="General" low="0" high="1" stdDev="0"/>
+</factor>
+<factor id="C" name="Porosity" unit="-" type="Numeric">
+<numeric format="General" low="0" high="1" stdDev="0"/>
+</factor>
+<factor id="D" name="Permeability" unit="md" type="Numeric">
+<numeric format="General" low="0" high="1" stdDev="0"/>
+</factor>
+</factorInfo>
+<constraintInfo/>
+<responseInfo>
+<response id="1" name="D in BU" unit="-" type="Normal" format="General" modelBase="Polynomial" stdDevSource="ANOVA" stdDev="0.220704387389379"/>
+<response id="2" name="Beta in Bu" unit="-" type="Normal" format="General" modelBase="Polynomial" stdDevSource="ANOVA" stdDev="0.22972419813741"/>
+<response id="3" name="D in DD" unit="-" type="Normal" format="General" modelBase="Polynomial" stdDevSource="ANOVA" stdDev="0.164181604432913"/>
+<response id="4" name="Beta in DD" unit="-" type="Normal" format="General" modelBase="Polynomial" stdDevSource="ANOVA" stdDev="0.174903755588336"/>
+</responseInfo>
+<guiState>
+<designLayout>
+<visibleColumns>
+<column type="stdorder">
+<width>35</width>
+</column>
+<column type="runorder">
+<width>35</width>
+</column>
+<column id="A" type="factor">
+<width>96</width>
+</column>
+<column id="B" type="factor">
+<width>96</width>
+</column>
+<column id="C" type="factor">
+<width>96</width>
+</column>
+<column id="D" type="factor">
+<width>96</width>
+</column>
+<column id="1" type="response">
+<width>96</width>
+</column>
+<column id="2" type="response">
+<width>96</width>
+</column>
+<column id="3" type="response">
+<width>96</width>
+</column>
+<column id="4" type="response">
+<width>96</width>
+</column>
+</visibleColumns>
+</designLayout>
+<graphSettings>
+<graphArea name="GraphColumns">
+<colorBy type="runOrder"/>
+</graphArea>
+<graphArea name="EffectsNoRestriction"/>
+<graphArea name="Diagnostics" index="0">
+<colorBy type="runOrder"/>
+</graphArea>
+<graphArea name="Model" index="0">
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">-1</axis>
+<axis index="1">-1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="EffectsNoRestriction"/>
+<graphArea name="Diagnostics" index="1">
+<colorBy type="runOrder"/>
+</graphArea>
+<graphArea name="Model" index="1">
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">-1</axis>
+<axis index="1">-1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="EffectsNoRestriction"/>
+<graphArea name="Diagnostics" index="2">
+<colorBy type="runOrder"/>
+</graphArea>
+<graphArea name="Model" index="2">
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">-1</axis>
+<axis index="1">-1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="EffectsNoRestriction"/>
+<graphArea name="Diagnostics" index="3">
+<colorBy type="runOrder"/>
+</graphArea>
+<graphArea name="Model" index="3">
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">-1</axis>
+<axis index="1">-1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="GraphicalOptimization">
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="NumericalOptimization">
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+</graphSettings>
+<perspectives>
+<report name="report_anova_Beta in Bu" width="1366" height="768">082789305e9f173900c6afdf00000002=+0|082784105e9f173900c6b00c00000003=+1,2|08279db05e9f173900c6b00e00000004=3,4,*5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=082789305e9f173900c6afdf00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=567;besth=583;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=082784105e9f173900c6b00c00000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=575;besth=288;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=08279db05e9f173900c6b00e00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=575;besth=289;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,3,0)=577|</report>
+<report name="report_anova_Beta in DD" width="1366" height="768">082789305e9f174400c6d9a700000002=*0|08279b205e9f174400c6d9d400000003=+1,2|08279db05e9f174400c6d9d600000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=082789305e9f174400c6d9a700000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=567;besth=583;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=08279b205e9f174400c6d9d400000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=575;besth=288;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=08279db05e9f174400c6d9d600000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=575;besth=289;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,3,0)=577|</report>
+<report name="report_anova_D in BU" width="1366" height="768">03fd70805e9eed4a0022e6fc00000002=*0|03fd6b605e9eed4a0022e72b00000003=+1,2|03fd75a05e9eed4a0022e72d00000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03fd70805e9eed4a0022e6fc00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=567;besth=583;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03fd6b605e9eed4a0022e72b00000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=575;besth=288;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03fd75a05e9eed4a0022e72d00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=575;besth=289;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,3,0)=577|</report>
+<report name="report_anova_D in DD" width="1366" height="768">08279db05e9f174100c6cf9900000002=*0|082793705e9f174100c6cfc600000003=+1,2|082789305e9f174100c6cfc800000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=08279db05e9f174100c6cf9900000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=567;besth=583;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=082793705e9f174100c6cfc600000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=575;besth=288;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=082789305e9f174100c6cfc800000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=575;besth=289;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,3,0)=577|</report>
+<report name="report_design_summary_" width="1366" height="768">03d276505e9eed410022c4da00000002=*0|03d28ad05e9eed410022c4f200000003=+1,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03d276505e9eed410022c4da00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=1156;besth=302;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03d28ad05e9eed410022c4f200000003;caption=;state=2098172;dir=3;layer=2;row=0;pos=0;prop=100000;bestw=1156;besth=310;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(3,2,0)=312|</report>
+<report name="report_evaluation_" width="1366" height="768">03fd6b605e9eed450022d5c800000002=+0,1|03fd6df05e9eed450022d60300000003=+2,4|03fd70805e9eed450022d60400000004=*6,5,3@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03fd6b605e9eed450022d5c800000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=567;besth=583;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03fd6df05e9eed450022d60300000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=575;besth=288;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03fd70805e9eed450022d60400000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=575;besth=289;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,3,0)=577|</report>
+<report name="report_fit_summary_Beta in Bu" width="0" height="0"></report>
+<report name="report_fit_summary_Beta in DD" width="0" height="0"></report>
+<report name="report_fit_summary_D in BU" width="0" height="0"></report>
+<report name="report_fit_summary_D in DD" width="0" height="0"></report>
+</perspectives>
+</guiState>
+<designModel terms="15">
+<designTerm id="0" coef="1" term="Intercept"/>
+<designTerm id="1" coef="1" term="A"/>
+<designTerm id="2" coef="1" term="B"/>
+<designTerm id="3" coef="1" term="C"/>
+<designTerm id="4" coef="1" term="D"/>
+<designTerm id="5" coef="1" term="AB"/>
+<designTerm id="6" coef="1" term="AC"/>
+<designTerm id="7" coef="1" term="AD"/>
+<designTerm id="8" coef="1" term="BC"/>
+<designTerm id="9" coef="1" term="BD"/>
+<designTerm id="10" coef="1" term="CD"/>
+<designTerm id="11" coef="1" term="A^2"/>
+<designTerm id="12" coef="1" term="B^2"/>
+<designTerm id="13" coef="1" term="C^2"/>
+<designTerm id="14" coef="1" term="D^2"/>
+</designModel>
+<run stdNo="11" dsnId="63" runNo="1" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">1</resVal>
+<resVal id="2">1</resVal>
+<resVal id="3">1</resVal>
+<resVal id="4">1</resVal>
+</run>
+<run stdNo="9" dsnId="63" runNo="2" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">1</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0</resVal>
+<resVal id="2">1</resVal>
+<resVal id="3">0</resVal>
+<resVal id="4">1</resVal>
+</run>
+<run stdNo="1" dsnId="6" runNo="3" blockNo="0" blockName="Block 1" pointId="6" pointName="Interior" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0.250029617802353</resVal>
+<resVal id="2">0.250033169278477</resVal>
+<resVal id="3">0.250012948671466</resVal>
+<resVal id="4">0.250011931030159</resVal>
+</run>
+<run stdNo="4" dsnId="6" runNo="4" blockNo="0" blockName="Block 1" pointId="6" pointName="Interior" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0.500751628528477</resVal>
+<resVal id="2">0.40797765225387</resVal>
+<resVal id="3">0.499874780866516</resVal>
+<resVal id="4">0.405217349315418</resVal>
+</run>
+<run stdNo="8" dsnId="56" runNo="5" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">1</resVal>
+<resVal id="2">1</resVal>
+<resVal id="3">1</resVal>
+<resVal id="4">1</resVal>
+</run>
+<run stdNo="5" dsnId="42" runNo="6" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">1</facActual>
+<resVal id="1">1</resVal>
+<resVal id="2">0</resVal>
+<resVal id="3">1</resVal>
+<resVal id="4">0</resVal>
+</run>
+<run stdNo="12" dsnId="39" runNo="7" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">1</resVal>
+<resVal id="2">0</resVal>
+<resVal id="3">1</resVal>
+<resVal id="4">0</resVal>
+</run>
+<run stdNo="2" dsnId="18" runNo="8" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">1</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0</resVal>
+<resVal id="2">0</resVal>
+<resVal id="3">0</resVal>
+<resVal id="4">0</resVal>
+</run>
+<run stdNo="7" dsnId="42" runNo="9" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">1</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0</resVal>
+<resVal id="2">0</resVal>
+<resVal id="3">0</resVal>
+<resVal id="4">0</resVal>
+</run>
+<run stdNo="10" dsnId="6" runNo="10" blockNo="0" blockName="Block 1" pointId="6" pointName="Interior" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0.000799840031991295</resVal>
+<resVal id="2">0.000901926766918137</resVal>
+<resVal id="3">0.249124562281136</resVal>
+<resVal id="4">0.249088236477824</resVal>
+</run>
+<run stdNo="3" dsnId="6" runNo="11" blockNo="0" blockName="Block 1" pointId="6" pointName="Interior" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0.437480472411422</resVal>
+<resVal id="2">0.391308658916271</resVal>
+<resVal id="3">0.437515621094726</resVal>
+<resVal id="4">0.391311786834272</resVal>
+</run>
+<run stdNo="6" dsnId="6" runNo="12" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0</facActual>
+<resVal id="1">0</resVal>
+<resVal id="2">1</resVal>
+<resVal id="3">0</resVal>
+<resVal id="4">1</resVal>
+</run>
+<responseModel id="1">
+<transform id="0" name="None"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="5">
+<equationTerm id="0" coef="0.491064029583118" term="Intercept"/>
+<equationTerm id="1" coef="-0.5" term="A"/>
+<equationTerm id="2" coef="-0.4519278470496" term="B"/>
+<equationTerm id="3" coef="-0.5" term="C"/>
+<equationTerm id="4" coef="0.458381603461793" term="D"/>
+<equationTerm id="5" term="Curvature"/>
+</compModel>
+</responseModel>
+<responseModel id="2">
+<transform id="0" name="None"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="5">
+<equationTerm id="0" coef="0.387082781764654" term="Intercept"/>
+<equationTerm id="1" coef="-0.5" term="A"/>
+<equationTerm id="2" coef="0.487622215442677" term="B"/>
+<equationTerm id="3" coef="-0.5" term="C"/>
+<equationTerm id="4" coef="-0.406070891161594" term="D"/>
+<equationTerm id="5" term="Curvature"/>
+</compModel>
+</responseModel>
+<responseModel id="3">
+<transform id="0" name="None"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="5">
+<equationTerm id="0" coef="0.508190327422909" term="Intercept"/>
+<equationTerm id="1" coef="-0.5" term="A"/>
+<equationTerm id="2" coef="-0.456944641366306" term="B"/>
+<equationTerm id="3" coef="-0.5" term="C"/>
+<equationTerm id="4" coef="0.451029404894206" term="D"/>
+<equationTerm id="5" term="Curvature"/>
+</compModel>
+</responseModel>
+<responseModel id="4">
+<transform id="0" name="None"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="5">
+<equationTerm id="0" coef="0.404066620805389" term="Intercept"/>
+<equationTerm id="1" coef="-0.5" term="A"/>
+<equationTerm id="2" coef="0.482647151481249" term="B"/>
+<equationTerm id="3" coef="-0.5" term="C"/>
+<equationTerm id="4" coef="-0.413361933174031" term="D"/>
+<equationTerm id="5" term="Curvature"/>
+</compModel>
+</responseModel>
+<optimization models="12">
+<criteria modType="Factor" id="1" goal="InRange" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="2" goal="InRange" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="3" goal="InRange" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="4" goal="InRange" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="1" goal="None" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="POE" id="1" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="2" goal="None" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="POE" id="2" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="3" goal="None" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="POE" id="3" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="4" goal="None" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="POE" id="4" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+</optimization>
+<buildInfo noOfCenterPoints="6" buildTime="6"/>
+</DEXXMLDoc>

@@ -1,0 +1,1460 @@
+<!DOCTYPE DEXXMLDoc SYSTEM "DEXXMLDoc.DTD">
+<DEXXMLDoc name="Skin.dxpx" creator="DX11" version="11.1.0.1">
+<designInfo studyType="ResponseSurface" studySubType="Randomized" designType="3LvlFactorial" noOfRuns="12" noOfFactors="4" noOfResponses="4">
+<designNotes>This data file created by Design-Expert 11.</designNotes>
+</designInfo>
+<blockInfo>
+<block code="0" name="Block 1"/>
+</blockInfo>
+<factorInfo>
+<factor id="A" name="Rate" unit="MMft3/day" type="Numeric">
+<numeric format="General" low="0" high="1" stdDev="0"/>
+</factor>
+<factor id="B" name="Rw" unit="ft" type="Numeric">
+<numeric format="General" low="0" high="1" stdDev="0"/>
+</factor>
+<factor id="C" name="Porosity" unit="-" type="Numeric">
+<numeric format="General" low="0" high="1" stdDev="0"/>
+</factor>
+<factor id="D" name="Permeability" unit="md" type="Numeric">
+<numeric format="General" low="0" high="1" stdDev="0"/>
+</factor>
+</factorInfo>
+<constraintInfo/>
+<responseInfo>
+<response id="1" name="Skin darcy (BU)" unit="-" type="Normal" format="General" modelBase="Polynomial" stdDevSource="ANOVA" stdDev="0.386045757960733"/>
+<response id="2" name="Skin nondarcy (BU)" unit="-" type="Normal" format="General" modelBase="Polynomial" stdDevSource="ANOVA" stdDev="0.387165624133416"/>
+<response id="3" name="Skin darcy (DD)" unit="-" type="Normal" format="General" modelBase="Polynomial" stdDevSource="ANOVA" stdDev="0.341146411532077"/>
+<response id="4" name="Skin nondarcy (DD)" unit="-" type="Normal" format="General" modelBase="Polynomial" stdDevSource="ANOVA" stdDev="0.283839882125823"/>
+</responseInfo>
+<guiState>
+<designLayout>
+<visibleColumns>
+<column type="stdorder">
+<width>35</width>
+</column>
+<column type="runorder">
+<width>35</width>
+</column>
+<column id="A" type="factor">
+<width>96</width>
+</column>
+<column id="B" type="factor">
+<width>96</width>
+</column>
+<column id="C" type="factor">
+<width>96</width>
+</column>
+<column id="D" type="factor">
+<width>96</width>
+</column>
+<column id="1" type="response">
+<width>96</width>
+</column>
+<column id="2" type="response">
+<width>96</width>
+</column>
+<column id="3" type="response">
+<width>96</width>
+</column>
+<column id="4" type="response">
+<width>96</width>
+</column>
+</visibleColumns>
+</designLayout>
+<graphSettings>
+<graphArea name="GraphColumns">
+<colorBy type="runOrder"/>
+</graphArea>
+<graphArea name="Diagnostics" index="0">
+<colorBy type="response" index="0"/>
+</graphArea>
+<graphArea name="Diagnostics" index="1">
+<colorBy type="response" index="1"/>
+</graphArea>
+<graphArea name="Diagnostics" index="2">
+<colorBy type="response" index="2"/>
+</graphArea>
+<graphArea name="Diagnostics" index="3">
+<colorBy type="response" index="3"/>
+</graphArea>
+<graphArea name="Model" index="3">
+<axis type="response">
+<low>-2</low>
+<high>2</high>
+<format>General</format>
+<ticks>5</ticks>
+</axis>
+<contours type="response" index="3" transformed="false" mode="auto">
+<format>General</format>
+<contourLevel>-0.5</contourLevel>
+<contourLevel>0</contourLevel>
+<contourLevel>0.5</contourLevel>
+<contourLevel>1</contourLevel>
+</contours>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">-1</axis>
+<axis index="1">-1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="GraphicalOptimization">
+<contours type="overlay" index="-1" transformed="true" mode="auto">
+<format>General</format>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+<contourLevel></contourLevel>
+</contours>
+<space>
+<codedPoint>
+<codedValue>-1</codedValue>
+<codedValue>1</codedValue>
+<codedValue>-1</codedValue>
+<codedValue>-1</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="NumericalOptimization" index="0">
+<contours type="desirability" index="-1" transformed="false" mode="auto">
+<format>General</format>
+<contourLevel>0.999</contourLevel>
+<contourLevel>0.9995</contourLevel>
+<contourLevel>1</contourLevel>
+<contourLevel>1.0005</contourLevel>
+</contours>
+<contours type="desirability" index="0" transformed="false" mode="auto">
+<format>General</format>
+<contourLevel>0.2</contourLevel>
+<contourLevel>0.4</contourLevel>
+<contourLevel>0.6</contourLevel>
+<contourLevel>0.8</contourLevel>
+</contours>
+<contours type="desirability" index="1" transformed="false" mode="auto">
+<format>General</format>
+<contourLevel>-0.5</contourLevel>
+<contourLevel>0</contourLevel>
+<contourLevel>0.5</contourLevel>
+<contourLevel>1</contourLevel>
+</contours>
+<contours type="desirability" index="2" transformed="false" mode="auto">
+<format>General</format>
+<contourLevel>0.2</contourLevel>
+<contourLevel>0.4</contourLevel>
+<contourLevel>0.6</contourLevel>
+<contourLevel>0.8</contourLevel>
+</contours>
+<contours type="desirability" index="3" transformed="false" mode="auto">
+<format>General</format>
+<contourLevel>-0.5</contourLevel>
+<contourLevel>0</contourLevel>
+<contourLevel>0.5</contourLevel>
+<contourLevel>1</contourLevel>
+</contours>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">-1</axis>
+<axis index="1">-1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+</graphSettings>
+<perspectives>
+<report name="diagnostics_notebook_Skin darcy (BU)" width="1366" height="768">03b28fd05e9ee4fe0002805700000002=*0|03e2e8405e9ee4fe000280c200000003=+1,2,6|03a2c2405e9ee4fe000280c400000004=+4,5|03a34d605e9ee4fe000280c500000005=+3,7,8,9,10@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03b28fd05e9ee4fe0002805700000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=567;besth=285;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03e2e8405e9ee4fe000280c200000003;caption=;state=2098172;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=575;besth=285;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03a2c2405e9ee4fe000280c400000004;caption=;state=2098172;dir=3;layer=5;row=0;pos=0;prop=100000;bestw=571;besth=292;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03a34d605e9ee4fe000280c500000005;caption=;state=2098172;dir=3;layer=5;row=0;pos=1;prop=100000;bestw=571;besth=292;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,4,0)=577|dock_size(3,5,0)=294|</report>
+<report name="diagnostics_notebook_Skin darcy (DD)" width="1366" height="768">03c049505e9ee50f0002c3db00000002=*0|03ad99d05e9ee5100002c43d00000003=+1,2,6|03ce6c505e9ee5100002c43e00000004=+4,5|03a4a2105e9ee5100002c44000000005=+3,7,8,9,10@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03c049505e9ee50f0002c3db00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=567;besth=285;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03ad99d05e9ee5100002c43d00000003;caption=;state=2098172;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=575;besth=285;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03ce6c505e9ee5100002c43e00000004;caption=;state=2098172;dir=3;layer=5;row=0;pos=0;prop=100000;bestw=571;besth=292;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03a4a2105e9ee5100002c44000000005;caption=;state=2098172;dir=3;layer=5;row=0;pos=1;prop=100000;bestw=571;besth=292;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,4,0)=577|dock_size(3,5,0)=294|</report>
+<report name="diagnostics_notebook_Skin nondarcy (BU)" width="1366" height="768">03ca4b705e9ee50b0002b08e00000002=*0|03aeede05e9ee50b0002b0f000000003=+1,2,6|03ad33305e9ee50b0002b0f100000004=+4,5|03c049505e9ee50b0002b0f300000005=+3,7,8,9,10@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03ca4b705e9ee50b0002b08e00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=567;besth=285;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03aeede05e9ee50b0002b0f000000003;caption=;state=2098172;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=575;besth=285;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03ad33305e9ee50b0002b0f100000004;caption=;state=2098172;dir=3;layer=5;row=0;pos=0;prop=100000;bestw=571;besth=292;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03c049505e9ee50b0002b0f300000005;caption=;state=2098172;dir=3;layer=5;row=0;pos=1;prop=100000;bestw=571;besth=292;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,4,0)=577|dock_size(3,5,0)=294|</report>
+<report name="diagnostics_notebook_Skin nondarcy (DD)" width="1366" height="768">03ad99d05e9ee5140002d62000000002=*0|03d910805e9ee5140002d68d00000003=+1,2,6|03b28fd05e9ee5140002d68f00000004=+4,5|03a5d7705e9ee5140002d69100000005=+3,7,8,9,10@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03ad99d05e9ee5140002d62000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=567;besth=285;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03d910805e9ee5140002d68d00000003;caption=;state=2098172;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=575;besth=285;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03b28fd05e9ee5140002d68f00000004;caption=;state=2098172;dir=3;layer=5;row=0;pos=0;prop=100000;bestw=571;besth=292;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03a5d7705e9ee5140002d69100000005;caption=;state=2098172;dir=3;layer=5;row=0;pos=1;prop=100000;bestw=571;besth=292;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,4,0)=577|dock_size(3,5,0)=294|</report>
+<report name="report_anova_Skin darcy (BU)" width="1366" height="768">02ed36b05e9ee4f4000257b500000002=+0|03a3c1e05e9ee4f4000257e300000003=+1,2|03a3bc105e9ee4f4000257e500000004=3,4,*5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02ed36b05e9ee4f4000257b500000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=503;besth=583;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03a3c1e05e9ee4f4000257e300000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=575;besth=288;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03a3bc105e9ee4f4000257e500000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=575;besth=289;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,3,0)=577|</report>
+<report name="report_anova_Skin darcy (DD)" width="1366" height="768">03c049505e9ee50f0002c19e00000002=+0|03ad99d05e9ee50f0002c1ce00000003=+1,2|039eab905e9ee50f0002c1d000000004=3,4,*5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03c049505e9ee50f0002c19e00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=503;besth=583;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03ad99d05e9ee50f0002c1ce00000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=575;besth=288;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=039eab905e9ee50f0002c1d000000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=575;besth=289;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,3,0)=577|</report>
+<report name="report_anova_Skin nondarcy (BU)" width="1366" height="768">02f79aa05e9ee5040002973600000002=+0|03ca4b705e9ee5040002978400000003=+1,2|03a5d7e05e9ee5040002978700000004=3,4,*5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02f79aa05e9ee5040002973600000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=503;besth=583;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03ca4b705e9ee5040002978400000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=575;besth=288;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03a5d7e05e9ee5040002978700000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=575;besth=289;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,3,0)=577|</report>
+<report name="report_anova_Skin nondarcy (DD)" width="1366" height="768">03ad99d05e9ee5130002d28d00000002=+0|02f869905e9ee5130002d2b900000003=+1,2|03b28fd05e9ee5130002d2bb00000004=3,4,*5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03ad99d05e9ee5130002d28d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=503;besth=583;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=02f869905e9ee5130002d2b900000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=575;besth=288;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03b28fd05e9ee5130002d2bb00000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=575;besth=289;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,3,0)=577|</report>
+<report name="report_design_summary_" width="1366" height="768">0396f1a05e9ee4ee0002429000000002=*0|03932be05e9ee4ee000242c900000003=+1,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=0396f1a05e9ee4ee0002429000000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=1156;besth=302;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03932be05e9ee4ee000242c900000003;caption=;state=2098172;dir=3;layer=2;row=0;pos=0;prop=100000;bestw=1156;besth=310;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(3,2,0)=312|</report>
+<report name="report_fit_summary_Skin darcy (BU)" width="0" height="0"></report>
+<report name="report_fit_summary_Skin darcy (DD)" width="0" height="0"></report>
+<report name="report_fit_summary_Skin nondarcy (BU)" width="0" height="0"></report>
+<report name="report_fit_summary_Skin nondarcy (DD)" width="0" height="0"></report>
+<report name="report_solutions_" width="1366" height="768">03d910805e9ee51b0002f29200000002=*0|03af9ce05e9ee51b0002f2c800000003=+1,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03d910805e9ee51b0002f29200000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=1148;besth=285;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=03af9ce05e9ee51b0002f2c800000003;caption=;state=2098172;dir=3;layer=2;row=0;pos=0;prop=100000;bestw=1148;besth=292;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(3,2,0)=294|</report>
+</perspectives>
+</guiState>
+<designModel terms="15">
+<designTerm id="0" coef="1" term="Intercept"/>
+<designTerm id="1" coef="1" term="A"/>
+<designTerm id="2" coef="1" term="B"/>
+<designTerm id="3" coef="1" term="C"/>
+<designTerm id="4" coef="1" term="D"/>
+<designTerm id="5" coef="1" term="AB"/>
+<designTerm id="6" coef="1" term="AC"/>
+<designTerm id="7" coef="1" term="AD"/>
+<designTerm id="8" coef="1" term="BC"/>
+<designTerm id="9" coef="1" term="BD"/>
+<designTerm id="10" coef="1" term="CD"/>
+<designTerm id="11" coef="1" term="A^2"/>
+<designTerm id="12" coef="1" term="B^2"/>
+<designTerm id="13" coef="1" term="C^2"/>
+<designTerm id="14" coef="1" term="D^2"/>
+</designModel>
+<run stdNo="11" dsnId="75" runNo="1" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">1</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">1</resVal>
+<resVal id="2">0</resVal>
+<resVal id="3">1</resVal>
+<resVal id="4">1</resVal>
+</run>
+<run stdNo="4" dsnId="41" runNo="2" blockNo="0" blockName="Block 1" pointId="6" pointName="Interior" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0.562500000000001</resVal>
+<resVal id="2">0.524017467248908</resVal>
+<resVal id="3">0.562500000000001</resVal>
+<resVal id="4">0.521410579345088</resVal>
+</run>
+<run stdNo="12" dsnId="78" runNo="3" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">1</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0</resVal>
+<resVal id="2">0.957904583723106</resVal>
+<resVal id="3">0</resVal>
+<resVal id="4">1</resVal>
+</run>
+<run stdNo="2" dsnId="41" runNo="4" blockNo="0" blockName="Block 1" pointId="6" pointName="Interior" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0.500000000000004</resVal>
+<resVal id="2">0.900757575757576</resVal>
+<resVal id="3">0.5</resVal>
+<resVal id="4">0.434190620272314</resVal>
+</run>
+<run stdNo="5" dsnId="41" runNo="5" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">1</facActual>
+<resVal id="1">0</resVal>
+<resVal id="2">0</resVal>
+<resVal id="3">0</resVal>
+<resVal id="4">0</resVal>
+</run>
+<run stdNo="10" dsnId="75" runNo="6" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0</resVal>
+<resVal id="2">1</resVal>
+<resVal id="3">0</resVal>
+<resVal id="4">1</resVal>
+</run>
+<run stdNo="1" dsnId="2" runNo="7" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0</resVal>
+<resVal id="2">0.117516629711752</resVal>
+<resVal id="3">0</resVal>
+<resVal id="4">0.712468193384224</resVal>
+</run>
+<run stdNo="6" dsnId="15" runNo="8" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0</facActual>
+<resVal id="1">1</resVal>
+<resVal id="2">1</resVal>
+<resVal id="3">1</resVal>
+<resVal id="4">1</resVal>
+</run>
+<run stdNo="7" dsnId="41" runNo="9" blockNo="0" blockName="Block 1" pointId="6" pointName="Interior" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">1</resVal>
+<resVal id="2">1</resVal>
+<resVal id="3">0.75</resVal>
+<resVal id="4">0</resVal>
+</run>
+<run stdNo="3" dsnId="14" runNo="10" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0</resVal>
+<resVal id="2">0</resVal>
+<resVal id="3">0</resVal>
+<resVal id="4">0</resVal>
+</run>
+<run stdNo="9" dsnId="57" runNo="11" blockNo="0" blockName="Block 1" pointId="-1" pointName="Unknown" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">1</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">1</resVal>
+<resVal id="2">0</resVal>
+<resVal id="3">1</resVal>
+<resVal id="4">0</resVal>
+</run>
+<run stdNo="8" dsnId="41" runNo="12" blockNo="0" blockName="Block 1" pointId="6" pointName="Interior" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">0.5</facActual>
+<facActual id="B">0.375</facActual>
+<facActual id="C">0.5</facActual>
+<facActual id="D">0.3</facActual>
+<resVal id="1">0</resVal>
+<resVal id="2">1</resVal>
+<resVal id="3">0</resVal>
+<resVal id="4">0.673894189071986</resVal>
+</run>
+<responseModel id="1">
+<transform id="0" name="None"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="5">
+<equationTerm id="0" coef="0.387932541069557" term="Intercept"/>
+<equationTerm id="1" coef="1.38777878078145E-17" term="A"/>
+<equationTerm id="2" coef="0.487373296050332" term="B"/>
+<equationTerm id="3" coef="0.5" term="C"/>
+<equationTerm id="4" coef="-0.406435686822789" term="D"/>
+<equationTerm id="5" term="Curvature"/>
+</compModel>
+</responseModel>
+<responseModel id="2">
+<transform id="0" name="None"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="5">
+<equationTerm id="0" coef="0.284704249834109" term="Intercept"/>
+<equationTerm id="1" coef="0.478952291861553" term="A"/>
+<equationTerm id="2" coef="-0.492489123688779" term="B"/>
+<equationTerm id="3" coef="-0.0587583148558761" term="C"/>
+<equationTerm id="4" coef="-0.463130612302521" term="D"/>
+<equationTerm id="5" term="Curvature"/>
+</compModel>
+</responseModel>
+<responseModel id="3">
+<transform id="0" name="None"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="5">
+<equationTerm id="0" coef="0.370630898287312" term="Intercept"/>
+<equationTerm id="1" coef="1.38777878078145E-17" term="A"/>
+<equationTerm id="2" coef="0.49244145403705" term="B"/>
+<equationTerm id="3" coef="0.5" term="C"/>
+<equationTerm id="4" coef="-0.39900821391122" term="D"/>
+<equationTerm id="5" term="Curvature"/>
+</compModel>
+</responseModel>
+<responseModel id="4">
+<transform id="0" name="None"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="5">
+<equationTerm id="0" coef="0.273753509000551" term="Intercept"/>
+<equationTerm id="1" coef="0.5" term="A"/>
+<equationTerm id="2" coef="-0.489281330919353" term="B"/>
+<equationTerm id="3" coef="0.143765903307888" term="C"/>
+<equationTerm id="4" coef="-0.458429536692156" term="D"/>
+<equationTerm id="5" term="Curvature"/>
+</compModel>
+</responseModel>
+<optimization models="12">
+<criteria modType="Factor" id="1" goal="InRange" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="2" goal="InRange" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="3" goal="InRange" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="4" goal="InRange" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="1" goal="None" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="POE" id="1" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="2" goal="None" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="POE" id="2" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="3" goal="None" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="POE" id="3" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="4" goal="None" type="Numeric" target="0.5" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="POE" id="4" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+</optimization>
+<buildInfo noOfCenterPoints="6" buildTime="6"/>
+</DEXXMLDoc>

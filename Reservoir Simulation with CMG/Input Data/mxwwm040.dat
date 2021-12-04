@@ -1,0 +1,474 @@
+** ****************************************************************************
+** mxwwm040.dat: Water-Gas Reservoir With Group Controls (Gaswater Option)  **
+** This data set demonstrates GCONM MAXSTW ... SHUTMOWS                     **
+** ****************************************************************************
+** ************************************************************************************
+** **
+** FILE:                 mxwwm040.dat                                               **
+** **
+** MODEL:  28x32x6   PRIMARY PRODUCTION IN A WATER-GAS RESERVOIRS WITH AQUIFER      **
+** **
+** ************************************************************************************
+** **
+** This example illustrates the use of group controls to manage a two-phase (water, **
+** gas) reservoir. There are two groups in the field, each group has 4 wells, and   **
+** its own group controls. The well status is determined by the well's operating    **
+** constraints, monitoring constraints and the group controls as well.              **
+** This data set demonstrates GCONM MAXSTW ... SHUTMOWS                             **
+** **
+** ************************************************************************************
+** CONTACT:    CMG,   (403)531-1300;   282-6495 (fax);support@cmgl.ca    (Internet) **
+** ************************************************************************************
+** 2020-02-09, 04:18:01 È.Ù, Ali
+RESULTS SIMULATOR IMEX 200600
+
+
+*TITLE1
+   'Gas deliverability Test'
+*TITLE2
+   '2 groups, 8 wells, with edge and bottom aquifers '
+*TITLE3
+   'SHUTMOWS Test'
+*CASEID
+   'WAT-GAS'
+
+   INUNIT FIELD
+   OUTUNIT FIELD
+
+   WPRN    *WELL     *TIME
+   WPRN    *GRID     *TIME
+   WPRN    *SECTOR   *TIME
+
+   OUTPRN  *WELL     *ALL
+   OUTPRN  *GRID     *SG    *SW    *PRES
+
+   OUTSRF  *GRID     *SG    *SW    *PRES *KRSETN *FLUX *VELOC
+** FLUX    FLUX AT SURFACE CONDITIONS      
+** VELOC   VELOCITY AT SURFACE CONDITIONS
+** NOTE: LEASE option included below for comparisons with the fluxes
+   WSRF    *GRID    1
+   WSRF    *WELL    1
+
+   *OUTPRN *RES *ALL
+   *OUTSRF *RES *ALL
+**$  Distance units: ft 
+RESULTS XOFFSET           0.0000
+RESULTS YOFFSET           0.0000
+RESULTS ROTATION           0.0000  **$  (DEGREES)
+RESULTS AXES-DIRECTIONS 1.0 -1.0 1.0
+**$ ***************************************************************************
+**$ Definition of fundamental cartesian grid
+**$ ***************************************************************************
+GRID VARI 25 25 15
+KDIR DOWN
+DI IVAR 
+ 25*158
+DJ JVAR 
+ 25*1015
+DK ALL
+ 9375*225
+DTOP
+ 625*7000
+**$ Property: NULL Blocks  Max: 1  Min: 1
+**$  0 = null block, 1 = active block
+NULL CON            1
+**$ Property: Porosity  Max: 0.12  Min: 0.12
+POR CON         0.12
+**$ Property: Permeability I (md)   Max: 8  Min: 8
+PERMI CON            8
+
+*NOLIST
+
+   PRPOR     15.0
+   CPOR       3.0E-6
+**$ Property: Permeability J (md)   Max: 8  Min: 8
+PERMJ CON            8
+**$ Property: Permeability K (md)   Max: 8  Min: 8
+PERMK CON            8
+**$ Property: Pinchout Array  Max: 1  Min: 1
+**$  0 = pinched block, 1 = active block
+PINCHOUTARRAY CON            1
+
+
+  
+*MODEL    GASWATER
+
+*PVTG    *BG     1  
+
+  **   P      Bg             VISgas
+
+  **  psia   RB/SCF            cp
+
+      300    1.21820E-02    0.01609
+      400    9.08330E-03    0.01617
+      500    7.22580E-03    0.01627
+      600    5.98890E-03    0.01637
+      700    5.10670E-03    0.01649
+      800    4.44630E-03    0.01661
+      900    3.93370E-03    0.01674
+     1000    3.52480E-03    0.01689
+     1100    3.19110E-03    0.01704
+     1200    2.91400E-03    0.01720
+     1300    2.68050E-03    0.01738
+     1400    2.48110E-03    0.01757
+     1500    2.30910E-03    0.01776
+     1600    2.15940E-03    0.01797
+     1700    2.02810E-03    0.01819
+     1800    1.91200E-03    0.01842
+     1900    1.80880E-03    0.01866
+     2000    1.71660E-03    0.01891
+     2100    1.63370E-03    0.01917
+     2200    1.55890E-03    0.01945
+     2300    1.49120E-03    0.01972
+     2400    1.42960E-03    0.02001
+     2500    1.37340E-03    0.02031
+     2600    1.32200E-03    0.02061
+     2700    1.27480E-03    0.02092
+     2800    1.23140E-03    0.02124
+     2900    1.19130E-03    0.02156
+     3000    1.15420E-03    0.02189
+     3200    1.08800E-03    0.02256
+     3400    1.03060E-03    0.02324
+     3600    9.80500E-04    0.02394
+     3800    9.36500E-04    0.02464
+     4000    8.97600E-04    0.02534
+     4200    8.63000E-04    0.02604
+     4400    8.32100E-04    0.02673
+     4600    8.04300E-04    0.02742
+     4800    7.79200E-04    0.02811
+     5000    7.56400E-04    0.02879
+     5200    7.35700E-04    0.02945
+     5400    7.16800E-04    0.03011
+     5600    6.99400E-04    0.03076
+     5800    6.83400E-04    0.03139
+     6000    6.68700E-04    0.03201
+     6200    6.55100E-04    0.03263
+
+      GRAVITY  *GAS     0.852
+      DENSITY  *WATER  63.02
+      BWI               1.01420
+      CW                3.0E-6
+      REFPW             14.7
+      VWI               0.96
+      CVW               0.0
+
+*ROCKFLUID
+
+RPT  1
+   
+   SWT
+     **  Sw       Krw 
+       0.3980    0.0000  
+       0.6237    0.0400  
+       0.6614    0.0600  
+       0.6990    0.0800  
+       0.7366    0.1100  
+       0.7743    0.1423  
+       0.8119    0.2126  
+       0.8495    0.3005  
+       1.0000    1.0000  
+   SLT 
+     **  Sl       Krg    
+       0.3980    0.9500  
+       0.6235    0.1520  
+       0.6517    0.0804  
+       0.6799    0.0329  
+       0.7081    0.0123  
+       0.7362    0.0042  
+       0.8490    0.0000  
+       1         0       
+
+RPT  2
+   SWT
+       0.2980    0.0000  
+       0.5612    0.0400  
+       0.6051    0.0600  
+       0.6490    0.0800  
+       0.6929    0.1100  
+       0.7368    0.1423  
+       0.7806    0.2126  
+       0.8245    0.3005  
+       1.0000    1.0000  
+    SLT
+       0.2980    0.9500  
+       0.5610    0.1520  
+       0.5939    0.0804  
+       0.6267    0.0329  
+       0.6596    0.0123  
+       0.6925    0.0042  
+       0.8240    0.0000  
+       1         0       
+
+RPT  3
+   SWT
+       0.1810    0.0000  
+       0.4881    0.0400  
+       0.5393    0.0600  
+       0.5905    0.0800  
+       0.6417    0.1100  
+       0.6929    0.1423  
+       0.7441    0.2126  
+       0.7952    0.3005  
+       1.0000    1.0000  
+   SLT
+       0.1810    0.9500  
+       0.4880    0.1520  
+       0.5264    0.0804  
+       0.5648    0.0329  
+       0.6031    0.0123  
+       0.6415    0.0042  
+       0.7950    0.0000  
+       1         0       
+
+RPT  4
+   SWT
+       0.2240    0.0000  
+       0.5150    0.0400  
+       0.5635    0.0600  
+       0.6120    0.0800  
+       0.6605    0.1100  
+       0.7090    0.1423  
+       0.7575    0.2126  
+       0.8060    0.3005  
+       1.0000    1.0000  
+   SLT
+       0.2240    0.9500  
+       0.5150    0.1520  
+       0.5514    0.0804  
+       0.5878    0.0329  
+       0.6241    0.0123  
+       0.6605    0.0042  
+       0.8060    0.0000  
+       1         0       
+
+RPT  5
+   SWT
+       0.2590    0.0000  
+       0.5369    0.0400  
+       0.5832    0.0600  
+       0.6295    0.0800  
+       0.6758    0.1100  
+       0.7221    0.1423  
+       0.7684    0.2126  
+       0.8148    0.3005  
+       1.0000    1.0000  
+   SLT
+       0.2590    0.9500  
+       0.5370    0.1520  
+       0.5717    0.0804  
+       0.6065    0.0329  
+       0.6413    0.0123  
+       0.6760    0.0042  
+       0.8150    0.0000  
+       1         0       
+
+RPT  6
+   SWT
+       0.7500    0.0000  
+       0.8438    0.0400  
+       0.8594    0.0600  
+       0.8750    0.0800  
+       0.8906    0.1100  
+       0.9063    0.1423  
+       0.9219    0.2126  
+       0.9375    0.3005  
+       1.0000    1.0000  
+   SLT
+       0.7500    0.9500  
+       0.8435    0.1520  
+       0.8552    0.0804  
+       0.8669    0.0329  
+       0.8786    0.0123  
+       0.8903    0.0042  
+       0.9370    0.0000  
+       1         0       
+RPT  7
+   SWT
+       0.2310    0.0000  
+       0.5194    0.0400  
+       0.5674    0.0600  
+       0.6155    0.0800  
+       0.6636    0.1100  
+       0.7116    0.1423  
+       0.7597    0.2126  
+       0.8077    0.3005  
+       1.0000    1.0000  
+   SLT
+       0.2310    0.9500  
+       0.5195    0.1520  
+       0.5556    0.0804  
+       0.5916    0.0329  
+       0.6277    0.0123  
+       0.6637    0.0042  
+       0.8080    0.0000  
+       1         0       
+
+*INITIAL
+
+      *VERTICAL   *BLOCK_CENTER    *WATER_GAS
+
+** 1797mSS
+REFDEPTH 5896.6
+REFPRES 2550
+DWGC 5896.6
+
+*NUMERICAL
+DTMAX 31.
+   *DTMIN        0.001
+ITERMAX 20
+MAXSTEPS 200
+NORM PRESS 100
+NORM SATUR 0.15
+MAXCHANGE PRESS 200
+MAXCHANGE SATUR 0.3
+AIM OFF
+PRECC 0.0005
+
+*RUN
+
+*DATE 1996  1   1 
+DTWELL 1
+
+  PTUBE   WATER_GAS   1
+  DEPTH  5669.6
+        QG  **   qg1   qg2  ..................
+                 5E6  10E6  15E6  20E6  25E6  30E6  35E6
+        WHP **  whp1  whp2  .........
+                 264   524  1364  2014
+        WGR **  wgr1  wgr2  .........
+                 0   15E-6 30E-6 45E-6 60E-6 100E-6
+        BHPTG
+        ** iwgr      iqg
+             1       1       359.82  618.03  1544.52 2281.92
+             2       1       383.99  653.08  1599.35 2346.07
+             3       1       403.99  678.54  1628.40 2385.89
+             4       1       422.88  696.19  1655.92 2424.25
+             5       1       441.16  708.77  1682.89 2461.31
+             6       1       468.68  742.11  1752.21 2554.24
+             1       2       476.55  700.90  1619.70 2373.87
+             2       2       520.12  759.57  1694.36 2452.28
+             3       2       558.68  801.88  1725.55 2491.11
+             4       2       591.50  821.64  1754.64 2527.87
+             5       2       613.20  840.07  1782.89 2563.45
+             6       2       658.50  888.17  1855.96 2654.03
+             1       3       619.07  803.51  1672.83 2419.58
+             2       3       676.26  878.81  1767.80 2516.25
+             3       3       728.53  930.05  1804.01 2557.81
+             4       3       763.81  957.08  1837.22 2596.99
+             5       3       790.94  982.72  1869.41 2635.03
+             6       3       856.24  1048.92 1952.97 2732.67
+             1       4       772.79  923.88  1731.57 2463.40
+             2       4       840.79  1010.62 1844.75 2578.52
+             3       4       899.00  1066.88 1887.30 2624.34
+             4       4       937.37  1101.94 1925.80 2667.33
+             5       4       971.04  1135.06 1963.02 2709.10
+             6       4       1056.02 1220.08 2059.62 2816.71
+             1       5       932.25  1056.76 1800.26 2512.93
+             2       5       1008.41 1150.78 1928.11 2644.96
+             3       5       1068.04 1209.74 1977.67 2695.76
+             4       5       1111.13 1252.74 2022.11 2743.25
+             5       5       1151.42 1293.32 2064.96 2789.40
+             6       5       1255.72 1397.25 2176.13 2908.74
+             1       6       1095.19 1198.30 1879.25 2570.05
+             2       6       1176.37 1294.89 2017.83 2716.72
+             3       6       1235.78 1356.40 2074.79 2772.81
+             4       6       1284.44 1407.21 2125.58 2825.23
+             5       6       1331.44 1455.18 2174.47 2876.29
+             6       6       1454.68 1577.94 2301.28 3008.66
+             1       7       1260.59 1346.02 1967.99 2635.32
+             2       7       1342.29 1440.53 2113.32 2793.62
+             3       7       1402.39 1505.58 2177.95 2855.34
+             4       7       1457.03 1564.04 2235.37 2913.13
+             5       7       1510.88 1619.31 2290.60 2969.45
+             6       7       1652.92 1760.85 2433.85 3115.93
+**$
+WELL  'Well-1'
+PRODUCER 'Well-1'
+OPERATE  MAX  STG  1e+007  CONT
+**$          rad  geofac  wfrac  skin
+GEOMETRY  K  0.25  0.37  1.  0.
+PERF  GEO  'Well-1'
+**$ UBA       ff  Status  Connection  
+    12 12 10  1.  OPEN    FLOW-TO  'SURFACE'
+    12 12 11  1.  OPEN    FLOW-TO  1
+    12 12 12  1.  OPEN    FLOW-TO  2
+    12 12 13  1.  OPEN    FLOW-TO  3
+    12 12 14  1.  OPEN    FLOW-TO  4
+    12 12 15  1.  OPEN    FLOW-TO  5
+   DATE 1996  11 30
+STOP
+   WPRN       *WELL *TIME
+   DATE 1996  12 31
+   WPRN       *GRID 0
+   DATE 1997  11 30
+   WPRN      *GRID *TIME
+   DATE 1997  12 31
+   WPRN       *GRID 0
+   DATE 1998  11 30
+   WPRN      *WELL *TIME
+   DATE 1998  12 31
+   WPRN       *GRID 0
+   DATE 1999  11 30
+   WPRN       *WELL *TIME
+   DATE 1999  12 31
+   WPRN       *GRID 0
+
+RESULTS SPEC 'Permeability I'  
+RESULTS SPEC SPECNOTCALCVAL -99999      
+RESULTS SPEC REGION 'All Layers (Whole Grid)'
+RESULTS SPEC REGIONTYPE 'REGION_WHOLEGRID'
+RESULTS SPEC LAYERNUMB 0
+RESULTS SPEC PORTYPE 1
+RESULTS SPEC CON 8           
+RESULTS SPEC STOP
+
+
+RESULTS SPEC 'Permeability J'  
+RESULTS SPEC SPECNOTCALCVAL -99999      
+RESULTS SPEC REGION 'All Layers (Whole Grid)'
+RESULTS SPEC REGIONTYPE 'REGION_WHOLEGRID'
+RESULTS SPEC LAYERNUMB 0
+RESULTS SPEC PORTYPE 1
+RESULTS SPEC CON 8           
+RESULTS SPEC STOP
+
+
+RESULTS SPEC 'Permeability K'  
+RESULTS SPEC SPECNOTCALCVAL -99999      
+RESULTS SPEC REGION 'All Layers (Whole Grid)'
+RESULTS SPEC REGIONTYPE 'REGION_WHOLEGRID'
+RESULTS SPEC LAYERNUMB 0
+RESULTS SPEC PORTYPE 1
+RESULTS SPEC CON 8           
+RESULTS SPEC STOP
+
+
+RESULTS SPEC 'Porosity'  
+RESULTS SPEC SPECNOTCALCVAL -99999      
+RESULTS SPEC REGION 'All Layers (Whole Grid)'
+RESULTS SPEC REGIONTYPE 'REGION_WHOLEGRID'
+RESULTS SPEC LAYERNUMB 0
+RESULTS SPEC PORTYPE 1
+RESULTS SPEC CON 0.12        
+RESULTS SPEC STOP
+
+
+RESULTS SPEC 'Grid Thickness'  
+RESULTS SPEC SPECNOTCALCVAL -99999      
+RESULTS SPEC REGION 'All Layers (Whole Grid)'
+RESULTS SPEC REGIONTYPE 'REGION_WHOLEGRID'
+RESULTS SPEC LAYERNUMB 0
+RESULTS SPEC PORTYPE 1
+RESULTS SPEC CON 225         
+RESULTS SPEC STOP
+
+
+RESULTS SPEC 'Grid Top'  
+RESULTS SPEC SPECNOTCALCVAL -99999      
+RESULTS SPEC REGION 'Layer 1 - Whole layer'
+RESULTS SPEC REGIONTYPE 'REGION_LAYER'
+RESULTS SPEC LAYERNUMB 1
+RESULTS SPEC PORTYPE 1
+RESULTS SPEC CON 7000        
+RESULTS SPEC STOP
+
